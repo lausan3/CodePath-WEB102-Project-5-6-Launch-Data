@@ -4,7 +4,7 @@ Submitted by: **Anthony Lau**
 
 This web app: **Displays information from a space launcher tracker API.**
 
-Time spent: **0** hours spent in total
+Time spent: **1.78** hours spent in total
 
 ## Required Features
 
