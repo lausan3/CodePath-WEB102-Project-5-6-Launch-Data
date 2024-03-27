@@ -5,8 +5,7 @@ interface props {
 }
 
 const Table = ({ apiData }: props) => {
-    console.log(apiData);
-
+    
     return (
         <>
             <table className="table">
@@ -33,9 +32,7 @@ const Table = ({ apiData }: props) => {
                                 />
                             );
                         })
-                    ) : (
-                        <tr>No data</tr>
-                        )
+                    ) : null
                 }
                 </tbody>
             </table>
