@@ -1,29 +1,24 @@
-# Web Development Project 5 - *Space Launch Data Dashboard*
+# Web Development Project 6 - *Space Launch Data Dashboard*
 
 Submitted by: **Anthony Lau**
 
 This web app: **Displays information from a space launcher tracker API.**
 
-Time spent: **4.3** hours spent in total
+Time spent: **0.20** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **The list displays a list of data fetched using an API call**
-- [x] **Data uses the useEffect React hook and async/await syntax**
-- [x] **The app dashboard includes at least three summary statistics about the data such as**
-  - [x] Amount of launches in data (doesn't work because API is limited to 10 for free)
-  - [x] Status code with highest count
-  - [x] Agency with highest count
-- [x] **A search bar allows the user to search for an item in the fetched data**
-- [x] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
+- [ ] **The app includes at least one unique chart developed using the fetched data that tell an interesting story**
+- [ ] **Clicking on an item in the list view displays more details about it**
+- [ ] **Clicking on an item has a direct, unique link to that item's detail view page**
+
 
 The following **optional** features are implemented:
 
-- [x] Multiple filters can be applied simultaneously
-- [x] Filters use different input types such as a text input, a selection, or a slider
-- [ ] The user can enter specific bounds for filter values
+- [ ] The site's customized dashboard contains more content that explains what is interesting about the data
+- [ ] The site allows users to toggle between different data visualizations
 
 The following **additional** features are implemented:
 
