@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import Sidebar from './components/Sidebar'
 import MiniDisplay from './components/MiniDisplay'
 import Table from './components/Table'
 
@@ -136,53 +135,50 @@ function App() {
   }
 
   return (
-    <div className="whole-page">
-      <Sidebar/>
-      <div className="main-container">
-        <div className="mini-container">
-          {
-            miniDisplay.length > 0 ? miniDisplay.map( (mini, index) => {
-              return (
-                <MiniDisplay key={index} title={mini.title} body={mini.body}/>
-              )
-            }) : <p>Nothing here</p>
-          }
-        </div>
-        <div className="main-display">
-            <h3 style={{margin: '8px 10px'}}>Filters:</h3>
-            <label
-                htmlFor="name"
-                style={{margin: "10px 10px"}}
-            >Search:
-            </label>
-            <input 
-                className="main-name"
-                type="text"
-                placeholder="Enter Name..."
-                name="name"
-                onChange={handleSearchInput}
-                value={searchInput}
-            />
-            <label
-              htmlFor="status"
+    <div className="main-container">
+      <div className="mini-display-container">
+        {
+          miniDisplay.length > 0 ? miniDisplay.map( (mini, index) => {
+            return (
+              <MiniDisplay key={index} title={mini.title} body={mini.body}/>
+            )
+          }) : <p>Nothing here</p>
+        }
+      </div>
+      <div className="main-display">
+          <h3 style={{margin: '8px 10px'}}>Filters:</h3>
+          <label
+              htmlFor="name"
               style={{margin: "10px 10px"}}
-            >Status:</label>
-            <select 
-              className="main-status"
-              value={selectedStatus} 
-              onChange={handleStatusChange}
-            >
-              <option value="none">None</option>
-              <option value="success">Success</option>
-              <option value="failure">Failure</option>
-              <option value="ongoing">Ongoing</option>
-            </select>
-            {
-              filteredResults === data 
-              ? <Table apiData={data}/>
-              : <Table apiData={filteredResults}/>
-            }
-        </div>
+          >Search:
+          </label>
+          <input 
+              className="main-name"
+              type="text"
+              placeholder="Enter Name..."
+              name="name"
+              onChange={handleSearchInput}
+              value={searchInput}
+          />
+          <label
+            htmlFor="status"
+            style={{margin: "10px 10px"}}
+          >Status:</label>
+          <select 
+            className="main-status"
+            value={selectedStatus} 
+            onChange={handleStatusChange}
+          >
+            <option value="none">None</option>
+            <option value="success">Success</option>
+            <option value="failure">Failure</option>
+            <option value="ongoing">Ongoing</option>
+          </select>
+          {
+            filteredResults === data 
+            ? <Table apiData={data}/>
+            : <Table apiData={filteredResults}/>
+          }
       </div>
     </div>
   )

@@ -4,15 +4,15 @@ Submitted by: **Anthony Lau**
 
 This web app: **Displays information from a space launcher tracker API.**
 
-Time spent: **0.20** hours spent in total
+Time spent: **3.58** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] **The app includes at least one unique chart developed using the fetched data that tell an interesting story**
-- [ ] **Clicking on an item in the list view displays more details about it**
-- [ ] **Clicking on an item has a direct, unique link to that item's detail view page**
+- [x] **The app includes at least one unique chart developed using the fetched data that tell an interesting story**
+- [x] **Clicking on an item in the list view displays more details about it**
+- [x] **Clicking on an item has a direct, unique link to that item's detail view page**
 
 
 The following **optional** features are implemented:
@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='launch-data/public/WEB102P5howcase.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='launch-data/public/WEB102P6Showcase.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LiceCAP  

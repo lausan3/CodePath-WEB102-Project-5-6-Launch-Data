@@ -26,6 +26,7 @@ const Table = ({ apiData }: props) => {
                                 <Row
                                 key={index}
                                 name={data.mission}
+                                id={data.id}
                                 date={data.window_start}
                                 status={data.status.abbrev}
                                 agency={data.lsp_name}
